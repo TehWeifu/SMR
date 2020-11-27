@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1> Ejemplo de formulario</h1>
+        <hr>
+        
+        <form action="" method="">
+            <fieldset>
+                <legend> Completa el formuario </legend>
+            <!-- Input para hacer un cuadro de texto. Los dos atributos del input son necesario -->
+            <label>Introduce tu ciudad: </label>
+            <input type="text" name="ciudad" size="50" required>
+            <br>
+            <label>Valora tu ciudad (del 1 al 10): </label>
+            <input type="number" name="valorCiudad" size="5000" min=1 max=10>
+            <br>
+            <label>Contrasenia: </label>
+            <input type="password" name="">
+            <br>
+            <input type="checkbox" name="politicas" required >
+            <label>Doy mi consentimiento a las politicas de seguridad</label>
+            <br>
+            <input type="checkbox" name="publicidad" checked>
+            <label>Doy mi consentimiento a recibir informacion de la web</label>
+            <br>
+
+            <h2>Que turno de estudio prefieres</h2>
+            <input type="radio" name="turno" value="maniana">
+            <labelL>Manania</labelL>
+            <br>
+            <input type="radio" name="turno" value="tarde">
+            <label>Tarde</label>
+            <!-- ES importante poner un value aqui para saber que opcion se ha escogido -->
+            <br>
+            <br>
+
+            
+            <h2>Que nombre te gusta mas</h2>
+            <select name="nombres">
+                <option value="pepe">Pepe</option>
+                <option value="paco">Paco</option>
+                <option value="ana">Ana</option>
+                <option value="pilar">Pilar</option>
+            </select>
+            <br>
+            <br>
+
+            <h2>Realiza un comentario</h2>
+            <br>
+            <textarea name="comentario" cols="50" rows="10" 
+            placeholder="Escribe aqui tu opinion..."></textarea>
+            <br>
+            <br>
+            
+            <input type="submit" value="valorar">
+            <!-- submit es un boton de envio, button es un boton normal y corriente -->
+            <!-- En los botones no es necesario el nombre -->
+            </fieldset>
+        </form>
+        <!-- atributo action para decir donde se envia la informacion
+        dos metodos para enviar la informacion 
+        (POST la informacion va en variables globales ocultas en la URL, va mas lento)
+        (GET la informacion viaja a traves de la url, va mas rapido) -->
+    </body>
+</html>

@@ -1,0 +1,165 @@
+/* apuntesStyle.css */
+
+/* Estilos en HTML */
+
+html {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 650px;
+    background-color: #ffffff;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited {
+    color: #006699;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #006699;
+    text-decoration: underline;
+}
+
+/* Estilos de Layout Divs */
+
+#header {
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    overflow: auto;
+}
+
+#container {
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    overflow: auto;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 0;
+    background-color: #eeeeee;
+    color: #aaaaaa;
+    font-size: 70%;
+    font-weight: bold;
+    border-top: 1px solid #000;
+    overflow: auto;
+}
+
+#navBar {
+    float: left;
+    width: 18%;
+    margin-top: 20px;
+    margin: 1%;
+    background-color: #dddddd;
+}
+
+#content {
+    float: left;
+    width: 78%;
+    margin: 1%;
+    overflow: hidden;
+}
+
+/* Estilos de #header */
+
+#header h1 {
+    padding-left: 1%;
+}
+
+/* Estilos de #main_menu */
+
+#main_menu {
+    padding-bottom: 5px;
+    padding-left: 1%;
+    border-bottom: 1px solid #cccccc;
+    overflow: auto;
+}
+
+#main_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main_menu li {
+    display: inline;
+    padding: 0;
+    margin: 0px;
+}
+
+#main_menu a {
+    float: left; display: block; text-align: center;
+    margin: 1px; padding: 5px; width: 80px;
+    text-decoration: none; color: #006699; font-weight: bold;
+    background-color: #eeeeee;
+}
+
+#main_menu a:hover {
+    color: white; font-weight: bold;
+    background-color: #006699;
+    text-decoration: underline;
+}
+
+/* Estilos de #navBar */
+
+#navBar h1, #navBar h2, #navBar h3 {
+    padding-left: 10px;
+}
+
+#navBar ul a:link, #navBar ul a:visited {
+    display: block;
+    color: #006699;
+}
+#navBar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de #sectionLinks */
+
+#sectionLinks {
+    position: relative;
+    margin-top: 20px;
+    padding: 0px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 90%;
+}
+
+#sectionLinks a:link{
+    padding: 2px 0px 2px 10px;
+    border-top: 1px solid #cccccc;
+}
+
+#sectionLinks a:visited {
+    border-top: 1px solid #cccccc;
+    padding: 2px 0px 2px 10px;
+}
+
+#sectionLinks a:hover {
+    border-top: 1px solid #cccccc;
+    background-color: #cccccc;
+    padding: 2px 0px 2px 10px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* Estilos de #content */
+
+#content h1, #content h2, #content h3 {
+    padding-left: 15px;
+}

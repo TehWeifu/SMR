@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "FuenteDeDisney";
+    src: url("DisneyFont.ttf");
+}
+
+#p1 {
+    text-align: justify;
+    /* text-indent es para la sangria de primera linea */
+    text-indent: 15px;
+
+    /* line-height para el interlineado entre lineas */
+    line-height: 20px;
+
+    /* word-spacing para espacio entre palabras */
+    word-spacing: 15px;
+
+    /* letter-spacing para separacion de letras */
+    letter-spacing: 5px;
+
+    /* color para cambiar el color de la letra (nombre o rbg) */
+    color: hotpink;
+
+    border: solid 2px #ca10c2;
+    width: 50%;
+    /* margen de: arriba 100, abajo 50, derecha 75, izquierda 25 */
+    margin: 100px 0px 50px 25px;
+    /* padding es para el margen interior de la etiqueta */
+    padding: 50px 25px;
+    /* margin y padding pueden recibir 1 parametro para todos los margenes
+    2 parametros para arriba/abajo y derecha/izquierda o 4 parametros para cada lado */
+}
+
+.foto {
+    display: block;
+    margin: 0 auto;
+    /* Para alinear la imagen con lo de arriba y lo de abajo */
+    border: dashed 2px #ca10c2;
+    /* El color se puede introducir como nombre ingles o con el codigo rbg */
+    padding: 4px;
+    background: orange;
+}
+
+h1 {
+    text-align:center; border: solid 2px #ca10c2;
+    font-family: "FuenteDeDisney";
+    font-size: 80px;
+    font-weight: 900;
+    text-decoration: underline wavy red;
+}
+
+p { 
+     /* font-family para la fuente de la letra */
+    font-family: "FuenteDeDisney";
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: line-through red;
+}
+
+span {
+    color: green;
+}

@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Ej 3 - Formulario</title>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            font-family: "Comic Sans MS";
+        }
+
+        legend,
+        label {
+            font-weight: bold;
+        }
+
+        input:focus {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>¿Es Minecraft el mejor juego de la historia?</h1>
+    <h2>Quien no conoce el Minecraft a cualquier Tetris le reza</h2>
+
+    <form>
+        <fieldset>
+            <legend>Formulario Minecraft</legend>
+
+            <label>Nombre: </label>
+            <input type="text" required>
+            <br><br>
+
+            <label>Apellidos: </label>
+            <input type="text" required>
+            <br><br>
+
+            <input type="radio" name="options" checked>
+            <label>Si</label>
+            <br><br>
+
+            <input type="radio" name="options">
+            <label>Por supuesto que si</label>
+            <br><br>
+
+
+            <input type="submit">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
