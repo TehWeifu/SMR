@@ -1,0 +1,35 @@
+html{
+    background-color: lightgray;
+}
+
+body {
+    margin: 1%;
+    padding: 1%;
+    border: solid 5px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+#titulo {
+    text-align: center;
+    font-weight: bold;
+    background-color: #669999;
+}
+
+.subtitulos {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #660000;
+    border-bottom: 1px solid #669999;
+}
+
+p {
+    line-height: 30px;
+    margin-left: 50px;
+}
+
+p.centrado {
+    line-height: 20px;
+    margin: 20px 0px;
+    text-align: center;
+}

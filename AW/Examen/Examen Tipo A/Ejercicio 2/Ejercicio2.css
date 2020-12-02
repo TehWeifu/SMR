@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    overflow: hidden;
+    width: 500px;
+    height: 150px;
+    border: #0033ff 3px solid;
+    border-radius: 5px;
+}
+
+#top {
+    width: 500px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+}
+
+#body {
+    background-color: lightyellow;
+    width: 500px;
+    height: 120px;
+}
+
+#top label {
+    float: left;
+    vertical-align: center;
+    font-size: 1.2em;
+    padding: 2px 0 5px 10px;
+}
+
+#top img {
+    position: absolute;
+    left: 474px;
+    width: 25px;
+    height: 25px;
+}
+
+#body img {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+#body label {
+    position: relative;
+    left: 50px;
+    bottom: 20px;
+    font-size: 1.4em;
+
+    color: #cccccc;
+}
+
+#body button {
+    position: absolute;
+    left: 245px;
+    top: 130px;
+    height: 20px;
+    width: 70px;
+}
