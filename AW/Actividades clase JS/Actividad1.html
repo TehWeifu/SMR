@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web clase1</title>
+    <meta charset="UTF-8">
+    <style>
+        p {
+            border: 2px solid red;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body onload="alert('Se ha cargado la pagina');">
+    <h3>Eventos click y dbclick</h3>
+    <p onclick="alert(`Has hecho click`);">Haz click aqui</p>
+    <p ondblclick="alert('Has hecho doble clikc');">Haz doble click aqui</p>
+    <hr>
+    <h3>Eventos mouseUp y mouseDown</h3>
+    <p onmouseup="alert('Has soltado el click');">Haz click aqui</p>
+    <p onmousedown="alert('Has apretado el click');">Haz click aqui</p>
+    <hr>
+    <h3>Eventos entrar y salir</h3>
+    <p onmouseover="alert('El raton ha entrado en la zona');">Pasa el raton por encima</p>
+    <p onmouseout="alert('El raton ha salido de la zona');">Pasa el raton por encima</p>
+    <p onmousewheel="alert('Has usado la rueda del raton');">Haz scroll</p>
+    <hr>
+    <label>Escribe algo: </label>
+    <input type="text" onkeypress="alert('Has pulsado una tecla');"> <br>
+    <label>Escribe algo: </label>
+    <input type="text" onkeyup="alert('Has soltado una tecla');"> <br>
+    <label>Escribe algo: </label>
+    <input type="text" onkeydown="alert('Has mantenido una tecla');"> <br>
+    <hr>
+    <h3>Prueba JS</h3>
+    <label>Te voy a decir lo que has escrito</label>
+    <input type="text" onkeypress="descubrirTecla();"> <br>
+
+    <script >
+        function descubrirTecla() {
+            // alert(String.fromCharCode(event.keyCode));
+            alert(`Has introducido la tecla: ${event.key}`);                
+        }
+    </script>
+
+</body>
+
+</html>
