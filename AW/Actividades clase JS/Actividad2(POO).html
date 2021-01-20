@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Introduccion POO</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            function Persona(att1, att2, att3) {
+                this.nombre = att1,
+                this.pelo = att2,
+                this.altura = att3,
+                this.setName = function (tmp) {
+                    this.nombre = tmp;
+                }
+            };
+
+            let julian = new Persona("Julian", "moreno", 1.50);
+            alert(julian.pelo);
+            julian.setName("Ruben");
+            alert(julian.nombre);
+
+            let raul = new Persona("raul", "pelirrojo", 1.80);
+            alert(raul.altura);
+
+        </script>
+    </body>
+</html>
