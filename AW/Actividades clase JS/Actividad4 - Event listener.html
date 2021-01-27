@@ -1,0 +1,32 @@
+<!DOCTYPE html>>
+<html lang="es">
+
+<head>
+    <title>AddEventListener</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Titulo bien refachero</h1>
+    <button id="b1">Mostrar</button>
+
+    <script type="text/javascript">
+        function mostrarMensajeA() {
+            alert('Hola has entrado en mi web');
+        }
+
+        function mostrarMensajeB() {
+            alert('Hola has pulsado mi boton!');
+        }
+
+        function cargar() {
+            let boton = document.getElementById('b1');
+            // boton.addEventListener("click", mostrarMensajeB, false);
+            boton.addEventListener("click", () => alert('Array function'), false);
+        }
+        
+        document.addEventListener("DOMContentLoaded", cargar, false);
+    </script>
+</body>
+
+</html>

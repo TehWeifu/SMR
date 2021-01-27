@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inner HTML</title>
+</head>
+
+<body>
+    <p style="color: red;" id="p1">hola!</p>
+    <button onclick="modificaTexto()">Click me!</button>
+    <button onclick="addTexto()">Click me!</button>
+    <button onclick="cambiarColor('green')">Cambia color a azul</button>
+    <button onclick="cambiarColor('red')">Cambia color a rojo</button>
+    <br>
+    <div id="publicidad"></div>
+    <button onclick="anuncio()">Pulsa para ver un anuncio</button>
+
+
+    <script type="text/javascript">
+        function modificaTexto() {
+            let parrafo = document.getElementById('p1');
+
+            if(parrafo.innerHTML === 'hola!') {
+                parrafo.innerHTML = 'Adios!';
+            } else {
+                parrafo.innerHTML = 'hola!';
+            }
+        }
+
+        function addTexto() {
+            let parrafo = document.getElementById('p1');
+
+            if(parrafo.innerHTML == 'hola!') {
+                parrafo.innerHTML += 'Adios!';
+            } else {
+                parrafo.innerHTML += 'hola!';
+            }
+        }
+
+        function cambiarColor(color) {
+            let parrafo = document.getElementById('p1');
+            // parrafo.style.color = color;
+            parrafo.setAttribute("style", `color:${color}`);
+        }
+
+        function anuncio(color) {
+            let cab = document.getElementById('publicidad');
+            cab.innerHTML = "<img src='BannerGif.gif'>";
+        }
+    </script>
+</body>
+
+</html>
