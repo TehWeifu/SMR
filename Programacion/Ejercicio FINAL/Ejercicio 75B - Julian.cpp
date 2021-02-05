@@ -34,7 +34,6 @@ int main() {
 			do {
 				std::cout << "Introduzca la fila y columna a marcar (separadas por un espacio): ";
 				std::cin >> inputRow >> inputCol;
-				//if (!inputValue(board, inputRow - 1, inputCol - 1, 'X')) std::cout << "Error. Esta casilla ya esta marcada." << std::endl;
 			} while (!inputValue(board, inputRow - 1, inputCol - 1, 'X'));
 
 			player1turn = false;
@@ -45,7 +44,6 @@ int main() {
 				do {
 					std::cout << "Introduzca la fila y columna a marcar (separadas por un espacio): ";
 					std::cin >> inputRow >> inputCol;
-					//if (!inputValue(board, inputRow, inputCol, 'O')) std::cout << "Error. Esta casilla ya esta marcada." << std::endl;
 				} while (!inputValue(board, inputRow - 1, inputCol - 1, 'O'));
 
 				player1turn = true;
