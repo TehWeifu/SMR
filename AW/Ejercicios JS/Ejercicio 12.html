@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 12</title>
+</head>
+<body>
+
+  <img id="pic" src="https://i.redd.it/m0ypb5fcswy21.jpg">
+  <p id="bottomText">Quien no conoce a Dios</p>
+
+</body>
+<p id="res"></p>
+
+<script>
+  document.getElementById("pic").addEventListener("mouseenter", () => 
+  document.getElementById("bottomText").innerHTML = "A cualquier santo le reza");
+  document.getElementById("pic").addEventListener("mouseleave", () => 
+  document.getElementById("bottomText").innerHTML = "Quien no conoce a Dios");
+
+</script>
+
+</body>
+</html>

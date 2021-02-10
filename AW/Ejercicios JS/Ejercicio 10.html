@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 10</title>
+</head>
+<body>
+  <label>Introduzca la nota de fisica: </label>
+  <input type="num" id="phyGrad">
+  <br>
+  <label>Introduzca la nota de geografia: </label>
+  <input type="num" id="geoGrad">
+  <br>
+  <label>Introduzca la nota de educacion fisica: </label>
+  <input type="num" id="peGrad">
+  <br>
+
+  <button id="but">Calcular media</button>
+
+  <p id="res"></p>
+
+</body>
+<p id="res"></p>
+
+<script>
+  document.getElementById("but").addEventListener("click", () => {
+    let phyGrad = parseFloat(document.getElementById("phyGrad").value);
+    let geoGrad = parseFloat(document.getElementById("geoGrad").value);
+    let peGrad = parseFloat(document.getElementById("peGrad").value);
+
+    document.getElementById("res").innerHTML = `La nota media de las tres asignaturas es ${(phyGrad + geoGrad + peGrad) / 3}`;
+  });
+</script>
+
+</body>
+</html>

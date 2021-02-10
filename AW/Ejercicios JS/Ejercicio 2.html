@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2</title>
+</head>
+<body>
+  <label>Escribe un numero: </label>
+  <input id="input1" type="number">
+  <br>
+  <label>Escribe otro numero: </label>
+  <input id="input2" type="number">
+  <br>
+  <button id="but">Calcular</button>
+    
+  <p id="res"></p>
+
+<script>
+  
+  document.getElementById('but').addEventListener("click", () =>
+   document.getElementById("res").innerHTML = 
+   ( `${document.getElementById('input1').value} mas ${document.getElementById('input2').value} es igual a
+   ${parseFloat(document.getElementById('input1').value) + parseFloat(document.getElementById('input2').value)}`));
+
+</script>
+</body>
+</html>

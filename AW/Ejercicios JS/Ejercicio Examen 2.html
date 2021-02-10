@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio examen 2</title>
+</head>
+<body>
+  <h1>Mate en 2</h1>
+  <img id="pic" src="https://i.redd.it/2709azh1i6f61.png">
+  <br>
+  <button id="bigger">←→</button>
+  <button id="smaller">→←</button>
+</body>
+<p id="res"></p>
+
+<script>
+  let pic = document.getElementById("pic");
+
+  document.getElementById("bigger").addEventListener("click", () => {
+    let currWidth = pic.clientWidth;
+    pic.style.height = (currWidth + 10) + "px";
+  })
+  document.getElementById("smaller").addEventListener("click", () => {
+    let currWidth = pic.clientWidth;
+    pic.style.height = (currWidth - 10) + "px";
+  })
+
+</script>
+
+</body>
+</html>

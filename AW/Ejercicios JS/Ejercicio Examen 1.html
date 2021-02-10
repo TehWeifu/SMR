@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio examen 1</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 30px;
+      text-align: center;
+      line-height: 200px;
+    }
+    #red {
+      background-color: red;
+    }
+    #blue {
+      background-color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="red"></div>
+  <div id="blue"></div>
+</body>
+<p id="res"></p>
+
+<script>
+  document.getElementById("red").addEventListener("mouseenter", () => 
+  document.getElementById("red").innerHTML = "Rojo");
+  document.getElementById("red").addEventListener("mouseleave", () => 
+  document.getElementById("red").innerHTML = "");
+
+  document.getElementById("blue").addEventListener("mouseenter", () => 
+  document.getElementById("blue").innerHTML = "Azul");
+  document.getElementById("blue").addEventListener("mouseleave", () => 
+  document.getElementById("blue").innerHTML = "");
+
+</script>
+
+</body>
+</html>

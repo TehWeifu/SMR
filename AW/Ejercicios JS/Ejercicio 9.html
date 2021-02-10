@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 9</title>
+</head>
+<body>
+
+</body>
+<p id="res"></p>
+
+<script>
+  window.addEventListener("load", () => {
+    let textResult = "";
+
+    for (let i = 0; i < 100; i++) {
+      textResult += (i * 2 + " ");
+    }
+    document.getElementById("res").innerHTML = `Los primeros 200 numeros pares son: <br>
+     ${textResult}`;
+  });
+</script>
+
+</body>
+</html>

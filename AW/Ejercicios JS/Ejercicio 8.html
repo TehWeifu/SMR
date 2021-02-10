@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 8</title>
+</head>
+<body>
+
+</body>
+<label>Introduzca un numero: </label>
+<input type="number" id="num1">
+<br>
+<label>Introduzca otro numero: </label>
+<input type="number" id="num2">
+<br>
+<button id="but">Mostrar numeros</button>
+<p id="res"></p>
+
+<script>
+  document.getElementById("but").addEventListener("click", () => {
+    let textResult = "";
+
+    let bigger = parseFloat(document.getElementById("num1").value);
+    let smaller = parseFloat(document.getElementById("num2").value);
+
+    if (smaller > bigger) [bigger, smaller] = [smaller, bigger]; //Si esto no funciona pasate al Chrome xd
+
+    textResult = `Los numeros pares entre ${smaller} y ${bigger} son: \n`;
+    if (!(smaller % 2)) smaller++;
+    for (let i = smaller + 1; i < bigger; i += 2) {
+      textResult += (i + " ");
+    }
+    document.getElementById("res").innerHTML = textResult;
+  });
+</script>
+
+</body>
+</html>
