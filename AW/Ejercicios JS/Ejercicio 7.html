@@ -12,10 +12,10 @@
 <p id="res"></p>
 
 <script>
-document.getElementById("grade").addEventListener("change", () => {
+    document.getElementById("grade").addEventListener("change", () => {
     let score = parseFloat(document.getElementById("grade").value);
     document.getElementById("res").innerHTML = (score < 5 ? "Suspendido" : score < 6 ? "Suficiente" : score < 7 ? "Bien" : score < 9 ? "Notable" : "Sobresaliente");
-})
+});
 </script>
 
 </body>

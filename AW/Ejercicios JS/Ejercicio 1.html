@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ejercicio 1</title>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
 </head>
 <body>
 <label>Escribe grados Celsius: </label>
 <input id="input" type="number">
-  <p id="res"></p>
+<p id="res"></p>
 
 <script>
-  
-  document.getElementById('input').addEventListener("change", () =>
-   document.getElementById("res").innerHTML = 
-   ( `${document.getElementById('input').value} grados Celcius son ${parseFloat(document.getElementById('input').value) * 9 / 5 + 32} grados fahrenheit`));
+
+    document.getElementById('input').addEventListener("change", () =>
+        document.getElementById("res").innerHTML =
+            (`${document.getElementById('input').value} grados Celcius son ${parseFloat(document.getElementById('input').value) * 9 / 5 + 32} grados fahrenheit`));
 
 </script>
 </body>

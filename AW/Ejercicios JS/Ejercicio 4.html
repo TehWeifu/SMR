@@ -7,15 +7,13 @@
 <body>
     <label>Escribe tu nombre: </label>
     <input type="text" id="name">
-  <p id="res"></p>
+    <p id="res"></p>
 
 </body>
 
 <script>
-
-    document.getElementById("name").addEventListener("change", () => 
-    document.getElementById("res").innerHTML = `Un saludo ${document.getElementById("name").value}`)   
-
+    document.getElementById("name").addEventListener("change", () =>
+    document.getElementById("res").innerHTML = `Un saludo ${document.getElementById("name").value}`);
 </script>
 </body>
 </html>
