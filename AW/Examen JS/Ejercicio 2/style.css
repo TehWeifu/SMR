@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 800px;
+    background: pink;
+    flex-direction: column;
+}
+
+.bar {
+    height: 50px;
+    width: 70%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background: white;
+}
+
+.progress {
+    height: inherit;
+    background: dodgerblue;
+    border-radius: 5px;
+    width: 0;
+}
+.progress25 {
+    position: absolute;
+    width: 50%;
+    height: inherit;
+    border-right: 2px solid black;
+}
+
+.progress50 {
+    position: absolute;
+    width: 66.66%;
+    height: inherit;
+    border-right: 2px solid black;
+}
+.progress75 {
+    position: absolute;
+    width: 50%;
+    height: inherit;
+    border-right: 2px solid black;
+}
+
+h1 {
+    font-family: Arial;
+}
+
+.res {
+    margin-top: 20px;
+    font-family: Arial;
+    font-size: xx-large;
+}

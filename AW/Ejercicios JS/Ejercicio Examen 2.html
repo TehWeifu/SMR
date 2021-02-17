@@ -19,6 +19,8 @@
   document.getElementById("bigger").addEventListener("click", () => {
     let currWidth = pic.clientWidth;
     pic.style.height = (currWidth + 10) + "px";
+    console.log(pic.style.height);
+
   })
   document.getElementById("smaller").addEventListener("click", () => {
     let currWidth = pic.clientWidth;
